@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>membuat form ala Dimas Dicky Saputra</title>
+	<style type="text/css">
+		.form {
+			max-width: 500px;
+			max-height: 750px;
+		}
+		.field_set {
+			border-color: salmon;
+			background-color: #e2ffff;
+		}
+		.form label {
+			width: 100px;
+			font-weight: bold;
+			font-size: 13px;
+			text-shadow: 1px 1px 1px 
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+		.form input[type=text],
+		.form input[type=radiobutton],
+		.form input [type=textarea] {
+			border: 1px solid;
+			margin-right: 10px	
+			font-weight: bold;
+		}
+		.input {
+			margin-left: 3px;
+		}
+		.textarea {
+			width: 300px;
+			height: 125px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Form HTML</h1>
+	<div class="form">
+	<form>
+		<fieldset class="field_set">
+			<legend>Data Pribadi</legend>
+			<label>Nama</label><input type="text" name="Nama" placeholder="Masukkan Nama anda">
+			<br>
+			<br>
+			<label>Jenis Kelamin</label><input type="radio" name="jenis kelamin" value="">Laki - Laki<input type="radio" name="jenis kelamin"> Perempuan
+			<br>
+			<br>
+			<label>Alamat</label><input type="text" name="Alamat" placeholder="Masukkan Alamat anda">
+			<br>
+			<br>
+			<label name="Negara">Negara</label>
+			<select>
+			<option value="indonesia">indonesia</option>
+			<option value="jepang">jepang</option>
+			<option value="korea">korea</option>
+			<option value="malaysia">malaysia</option>
+			<option value="vanuatu">vanuatu</option>
+			</select>
+			<br>
+			<br>
+			<label>Email</label><input type="text" name="Email" placeholder="Masukkan Email anda">
+			<br>
+			<br>
+			<label>Foto</label><input type="text" name="foto" placeholder="Pilih foto Klik Browse"><input type="file" name="browse">
+			<br>
+			<br> 
+			<label>Comment</label><textarea class="textarea" name="Comment" placeholder="Masukkan Komentar anda"></textarea><input class="input" type="submit" name="submit" value="Submit" >
+		</fieldset>
+	</form>
+	</div>
+</body>
+</html>
